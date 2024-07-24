@@ -7,11 +7,11 @@ const ColoredGrid = () => {
 	return (
 		<FadeIn className={cn(styles.coloredgrid, 'relative py-16')}>
 			<Image
-				src='/grass.png'
+				src='/grass-mob.png'
 				alt='Трава на острове'
-				width={1442}
-				height={289}
-				className='block xl:hidden absolute top-0 left-0 w-full h-full object-cover'
+				width={1719}
+				height={1232}
+				className='block xl:hidden absolute top-0 left-0 w-full h-full object-cover object-center object-bottom'
 			/>
 			<div
 				className={cn(

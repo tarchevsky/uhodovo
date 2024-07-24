@@ -45,7 +45,8 @@ module.exports = {
 					primary: '#3F4738',
 					secondary: '#1D2B1D',
 					accent: '#B0A296',
-					neutral: '#4D4038'
+					neutral: '#4D4038',
+					'--glass-blur': '4px'
 				}
 			}
 		], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
