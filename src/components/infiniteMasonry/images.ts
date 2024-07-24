@@ -1,62 +1,117 @@
 export const images = [
 	{
 		id: '1',
-		src: 'https://images.unsplash.com/photo-1619417606952-552a15237367?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Алтай'
+		src: '/boat-2.jpeg',
+		alt: 'Лодка припаркованная к берегу'
 	},
 	{
 		id: '2',
-		src: 'https://images.unsplash.com/photo-1630535879508-9a3a8967d9be?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Санкт-Петербург'
+		src: '/company-1.jpeg',
+		alt: 'Смех у костра'
 	},
 	{
 		id: '3',
-		src: 'https://images.unsplash.com/photo-1623335177873-2caed992d1c7?q=80&w=3272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Переславль-Залесский'
+		src: '/company-2.jpeg',
+		alt: 'Солнечное утро и кофе'
 	},
 	{
 		id: '4',
-		src: 'https://images.unsplash.com/photo-1606841002936-38996d5eea7f?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Териберка'
+		src: '/boat-3.jpeg',
+		alt: 'Две лодки припарковались у острова'
 	},
 	{
 		id: '5',
-		src: 'https://images.unsplash.com/photo-1665073140507-0bad3d962476?q=80&w=3303&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Камчатка'
+		src: '/company-3.jpeg',
+		alt: 'Хорошо сидится'
 	},
 	{
 		id: '6',
-		src: 'https://images.unsplash.com/photo-1645128187991-3030aa113532?q=80&w=2760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Камчатка'
+		src: '/boat-4.jpeg',
+		alt: 'Плаваем рядом с судном'
 	},
 	{
 		id: '7',
-		src: 'https://images.unsplash.com/photo-1606949571055-91663aef19fc?q=80&w=3276&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Камчатка, зверёк евражка'
+		src: '/girl-1.jpeg',
+		alt: 'Время для красивых фото'
 	},
 	{
 		id: '8',
-		src: 'https://images.unsplash.com/photo-1694117203281-8b6672a249fc?q=80&w=3091&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Уральские горы'
+		src: '/family-1.jpeg',
+		alt: 'Семейные фото получаются очень романтичные'
 	},
 	{
 		id: '9',
-		src: 'https://images.unsplash.com/photo-1614000531402-74cca389903f?q=80&w=2403&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Байкал пещера'
+		src: '/family-2.jpeg',
+		alt: 'Семейное фото на закате'
 	},
 	{
 		id: '10',
-		src: 'https://images.unsplash.com/photo-1594397394907-096148b9d1c9?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Казанский собор, Санкт-Петербург'
+		src: '/girl-2.jpeg',
+		alt: 'Дожь с утра не мешает прогулке'
 	},
 	{
 		id: '11',
-		src: 'https://images.unsplash.com/photo-1714632641561-ade0518869b3?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Хижина в Сибири'
+		src: '/girl-3.jpeg',
+		alt: 'В палатке так уютно, что вылезать не хочется'
 	},
 	{
 		id: '12',
-		src: 'https://images.unsplash.com/photo-1711707123633-5d97ef425df9?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		alt: 'Крым, скала и море'
+		src: '/company-4.jpeg',
+		alt: 'Опять та же компания'
+	},
+	{
+		id: '13',
+		src: '/company-5.jpeg',
+		alt: 'Обстановка в нашем лагере'
+	},
+	{
+		id: '14',
+		src: '/company-6.jpeg',
+		alt: 'Сфоткаемся на память'
+	},
+	{
+		id: '15',
+		src: '/archie-1.jpeg',
+		alt: 'Встреча с обитателем острова'
+	},
+	{
+		id: '16',
+		src: '/girl-4.jpeg',
+		alt: 'Кофе, остров, костёр, вода - хорошо'
+	},
+	{
+		id: '17',
+		src: '/camping-1.jpeg',
+		alt: 'В следующий раз поменяли локацию'
+	},
+	{
+		id: '18',
+		src: '/company-7.jpeg',
+		alt: 'Оживлённая беседа'
+	},
+	{
+		id: '19',
+		src: '/company-8.jpeg',
+		alt: 'Прекрасное утро - почему бы не перекусить'
+	},
+	{
+		id: '20',
+		src: '/shore-2.jpeg',
+		alt: 'Вот вид на берег'
+	},
+	{
+		id: '21',
+		src: '/archie-2.jpeg',
+		alt: 'Какое же красивое фото получилось, Арчи фактурный'
+	},
+	{
+		id: '22',
+		src: '/company-9.jpeg',
+		alt: 'Отличное настроение и запоминающиеся моменты'
+	},
+	{
+		id: '23',
+		src: '/tree-1.jpg',
+		alt: 'На острове красивая растительность'
 	}
 ]

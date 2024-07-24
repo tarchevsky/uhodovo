@@ -95,7 +95,7 @@ const InfiniteMasonry: React.FC<MasonryProps> = ({ images }) => {
 								width={1000}
 								height={1000}
 								style={{ width: '100%', height: '100%' }}
-								quality={10}
+								quality={40}
 								onLoad={() => handleImageLoad(image.id)}
 							/>
 							{imagesLoaded[image.id] && (
