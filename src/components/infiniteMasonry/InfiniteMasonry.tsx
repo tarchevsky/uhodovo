@@ -3,6 +3,7 @@ import cn from 'clsx'
 import styles from './InfiniteMasonry.module.scss'
 import { MasonryProps } from '@/types'
 import Image from 'next/image'
+import FadeIn from '@/components/fadeIn/FadeIn'
 
 const InfiniteMasonry: React.FC<MasonryProps> = ({ images }) => {
 	const [visibleImages, setVisibleImages] = useState<typeof images>([])
@@ -74,7 +75,7 @@ const InfiniteMasonry: React.FC<MasonryProps> = ({ images }) => {
 			{columns.map((column, columnIndex) => (
 				<div key={columnIndex} className='flex flex-col gap-6'>
 					{column.map((image, imageIndex) => (
-						<div
+						<FadeIn
 							key={image.id}
 							className={cn(styles.img, 'relative')}
 							style={{
@@ -108,7 +109,7 @@ const InfiniteMasonry: React.FC<MasonryProps> = ({ images }) => {
 									{image.alt}
 								</div>
 							)}
-						</div>
+						</FadeIn>
 					))}
 				</div>
 			))}
