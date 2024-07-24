@@ -1,0 +1,45 @@
+.checklist {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+          'required'
+          'requiredboxes'
+          'zone'
+          'zoneboxes'
+          'pic'
+          'text'
+}
+
+@media (min-width: 1024px) {
+  .checklist {
+    grid-template-columns: 200px 300px 1fr;
+    grid-template-areas:
+          'required requiredboxes requiredboxes'
+          'zone zoneboxes pic'
+          'zone zoneboxes pic'
+          'zone zoneboxes text'
+  }
+}
+
+.required {
+  grid-area: required;
+}
+
+.requiredboxes {
+  grid-area: requiredboxes;
+}
+
+.zone {
+  grid-area: zone;
+}
+
+.zoneboxes {
+  grid-area: zoneboxes;
+}
+
+.pic {
+  grid-area: pic;
+}
+
+.text {
+  grid-area: text;
+}
