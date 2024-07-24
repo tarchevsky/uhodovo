@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Vibe = () => {
 	return (
 		<>
-			<FadeIn className='mb-16'>
+			<FadeIn className='mb-20 xl:mb-16'>
 				<aside
 					className={cn(styles.vibe, 'flex flex-col xl:flex-row xl:gap-14')}
 				>
