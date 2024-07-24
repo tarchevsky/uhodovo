@@ -8,7 +8,7 @@ const TextBg = () => {
 		<FadeIn
 			className={cn(
 				styles.textbg,
-				'relative h-[300px] xl:h-[100svh] w-full grid gap-5 items-end xl:items-start'
+				'relative h-[300px] xl:h-[100svh] w-full grid gap-5 xl:pr-[400px] items-end xl:items-start'
 			)}
 		>
 			<Image
@@ -21,7 +21,7 @@ const TextBg = () => {
 			<div
 				className={cn(
 					styles.text,
-					'relative z-10 w-full xl:h-[40svh] p-4 xl:p-16 border-2 border-base-100 text-base-100 text-[14px] md:text-xl'
+					'relative z-10 w-full xl:h-[50svh] p-4 xl:p-16 border-2 border-base-100 text-base-100 text-[14px] md:text-xl'
 				)}
 			>
 				<p className={cn('hidden xl:block')}>
@@ -29,11 +29,12 @@ const TextBg = () => {
 					честь ранее существовавшей одноимённой деревни. Она была полностью
 					затоплена в тридцатые годы XX века, когда велось строительство
 					протяжённого канала Москва-Волга.
-				</p>
-				<p className={cn('hidden xl:block')}>
-					В настоящее время на красивых волжских берегах в акватории
+					<br />
+					<br />В настоящее время на красивых волжских берегах в акватории
 					Иваньковского водохранилища располагаются базы отдыха. А еще туристам
-					предлагается активный отдых в палатках.{' '}
+					предлагается активный отдых в палатках.
+					<br />
+					<br />
 				</p>
 				<p>
 					“Сосны, песок, Московское море, грибы, ягоды. Мимо проходят живописные
