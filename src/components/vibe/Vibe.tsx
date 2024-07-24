@@ -7,7 +7,9 @@ const Vibe = () => {
 	return (
 		<>
 			<FadeIn className='mb-16'>
-				<aside className={cn(styles.vibe, 'flex flex-col xl:flex-row gap-14')}>
+				<aside
+					className={cn(styles.vibe, 'flex flex-col xl:flex-row xl:gap-14')}
+				>
 					<div
 						className={cn(
 							styles.grid,
