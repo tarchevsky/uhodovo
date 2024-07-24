@@ -8,8 +8,8 @@ const Reports: NextPage = () => {
 	return (
 		<>
 			<Meta title='Фотоотчеты' metaDesc='Описание страницы' />
-			<FadeIn className='cont'>
-				<h1>Скоро здесь будут Фотоотчеты</h1>
+			<FadeIn className='cont my-16'>
+				<h1 className='text-4xl'>Фотоотчет</h1>
 			</FadeIn>
 			<div className='cont'>
 				<InfiniteMasonry images={images} />
