@@ -32,7 +32,9 @@ const Vibe = () => {
 							</div>
 						</div>
 					</div>
-					<div className={cn(styles.grid, 'grid gap-10 w-full h-full')}>
+					<div
+						className={cn(styles.grid, 'grid grid-rows-2 gap-10 w-full h-full')}
+					>
 						<div>
 							<Image
 								src='/shore.png'
