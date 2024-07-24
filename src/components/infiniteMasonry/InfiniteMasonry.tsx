@@ -27,7 +27,7 @@ const InfiniteMasonry: React.FC<MasonryProps> = ({ images }) => {
 					loadMoreImages()
 				}
 			},
-			{ rootMargin: '100px', threshold: 0 }
+			{ rootMargin: '100px', threshold: 0.1 }
 		)
 
 		if (loaderRef.current) {
