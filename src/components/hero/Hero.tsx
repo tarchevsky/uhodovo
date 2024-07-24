@@ -15,7 +15,7 @@ const Hero = ({ title, buttonText, alt, subtitle, src }: HeroProps) => {
 					priority
 					className='w-full h-full object-cover'
 				/>
-				<div className='absolute bottom-28 left-1/2 -translate-x-1/2 text-center'>
+				<div className='absolute bottom-28 left-1/2 -translate-x-1/2 text-center w-full xl:w-auto px-4'>
 					{subtitle ? (
 						<p
 							className={cn(
@@ -28,7 +28,7 @@ const Hero = ({ title, buttonText, alt, subtitle, src }: HeroProps) => {
 					<h1
 						className={cn(
 							styles.h1,
-							'absolute z-10 text-8xl text-base-100 uppercase font-light'
+							'absolute z-10 text-7xl xl:text-8xl text-base-100 uppercase font-light '
 						)}
 					>
 						{title}
