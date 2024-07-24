@@ -46,7 +46,14 @@ module.exports = {
 					secondary: '#1D2B1D',
 					accent: '#B0A296',
 					neutral: '#4D4038',
-					'--glass-blur': '4px'
+					'--glass-blur': '4px',
+					'.glass': {
+						'background-image':
+							'linear-gradient(\n' +
+							'        rgb(255 255 255 / var(--glass-opacity, 20%)) 50%,\n' +
+							'        rgb(0 0 0 / 0%) 100%\n' +
+							'      )'
+					}
 				}
 			}
 		], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
