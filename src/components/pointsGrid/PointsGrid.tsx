@@ -2,7 +2,10 @@ const PointsGrid = () => {
 	return (
 		<div className='grid sm:grid-cols-2 xl:grid-cols-3 gap-24 mb-16'>
 			<div className='relative'>
-				<div className='absolute -z-10 h-full w-full -left-4 -top-4 text-6xl font-extrabold text-neutral-200'>
+				<div
+					id='organization'
+					className='absolute -z-10 h-full w-full -left-4 -top-4 text-6xl font-extrabold text-neutral-200'
+				>
 					1.
 				</div>
 				<p>

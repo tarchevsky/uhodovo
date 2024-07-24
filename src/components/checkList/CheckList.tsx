@@ -10,6 +10,7 @@ const CheckList = () => {
 				Взять с собой
 			</h3>
 			<form
+				id='take'
 				className={cn(
 					styles.checklist,
 					'grid gap-5 mb-10 px-[20px] sm:px-[45px] lg:px-0'
