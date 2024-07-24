@@ -1,6 +1,6 @@
 const PointsGrid = () => {
 	return (
-		<div className='grid sm:grid-cols-2 xl:grid-cols-3 gap-24 mb-16'>
+		<div className='grid sm:grid-cols-2 xl:grid-cols-3 gap-24 mb-16 p-6 md:p-0'>
 			<div className='relative'>
 				<div
 					id='organization'
