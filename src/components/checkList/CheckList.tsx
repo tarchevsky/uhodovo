@@ -28,30 +28,30 @@ const CheckList = () => {
 					)}
 				>
 					<div>
-						<Checkbox label='газовая горелка или баллоны' />
-						<Checkbox label='стол' />
-						<Checkbox label='кастрюля, котелок, чайник' />
-						<Checkbox label='одноразовый мангал' />
-						<Checkbox label='угли, розжиг' />
-						<Checkbox label='тент, паракорд' />
+						<Checkbox label='палатка' />
+						<Checkbox label='спальник' />
+						<Checkbox label='коврик, матрас-пенка' />
+						<Checkbox label='надувная подушка' />
+						<Checkbox label='чашка, миска, ложка, вилка' />
+						<Checkbox label='походный стульчик' />
 					</div>
 
 					<div>
-						<Checkbox label='умывальник, мусорные мешки' />
-						<Checkbox label='средство для мытья посуды' />
-						<Checkbox label='нож, разделочная доска' />
-						<Checkbox label='спички, зажигалка, лопата' />
-						<Checkbox label='влажные салфетки' />
-						<Checkbox label='репелленты  от насекомых' />
+						<Checkbox label='фонарики' />
+						<Checkbox label='пауэрбанки, батарейки ' />
+						<Checkbox label='головной убор от солнца' />
+						<Checkbox label='дождевик' />
+						<Checkbox label='солнце-защитный крем' />
+						<Checkbox label='зубная щетка, паста' />
 					</div>
 
 					<div>
-						<Checkbox label='репелленты  от насекомых' />
-						<Checkbox label='гамак' />
-						<Checkbox label='мяч, бадминтон или игра' />
-						<Checkbox label='арбуз, шашлык, макароны' />
-						<Checkbox label='тушенка, вафли, хлеб' />
-						<Checkbox label='суповой набор, мюсли' />
+						<Checkbox label='аптечка, туалетная бумага' />
+						<Checkbox label='вода (6-8 л на человека)' />
+						<Checkbox label='запас еды, чайные пакетики' />
+						<Checkbox label='купальник, полотенце, плед' />
+						<Checkbox label='шлепки и закрытая обувь' />
+						<Checkbox label='теплая одежда на вечер' />
 					</div>
 				</div>
 				<div
@@ -87,7 +87,7 @@ const CheckList = () => {
 					</div>
 
 					<div>
-						<Checkbox label='репелленты  от насекомых' />
+						<Checkbox label='колонка музыкальная' />
 						<Checkbox label='гамак' />
 						<Checkbox label='мяч, бадминтон или игра' />
 						<Checkbox label='арбуз, шашлык, макароны' />
