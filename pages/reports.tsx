@@ -11,9 +11,9 @@ const Reports: NextPage = () => {
 			<FadeIn className='cont'>
 				<h1>Скоро здесь будут Фотоотчеты</h1>
 			</FadeIn>
-			<FadeIn className='cont'>
+			<div className='cont'>
 				<InfiniteMasonry images={images} />
-			</FadeIn>
+			</div>
 		</>
 	)
 }
