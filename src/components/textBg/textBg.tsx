@@ -8,7 +8,7 @@ const TextBg = () => {
 		<FadeIn
 			className={cn(
 				styles.textbg,
-				'relative h-[200px] xl:h-[100svh] w-full grid gap-5 md:pr-[200px] xl:pr-[300px] items-end xl:items-start mt-16 md:mt-[50svh]'
+				'relative h-[200px] xl:h-[100svh] w-full grid gap-5 md:pr-[200px] xl:pr-[300px] items-end xl:items-start'
 			)}
 		>
 			<Image

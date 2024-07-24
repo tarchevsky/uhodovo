@@ -21,7 +21,7 @@ const ColoredGrid = () => {
 				<div
 					className={cn(
 						styles.square,
-						'glass md:glass:hidden md:bg-accent bg-transparent p-4 pt-16'
+						'glass md:bg-accent bg-transparent p-4 pt-16'
 					)}
 				>
 					На острове живет очень дружелюбная собака Арчи. В 2023 году Арчи
@@ -31,7 +31,7 @@ const ColoredGrid = () => {
 				<div
 					className={cn(
 						styles.square,
-						'glass md:glass:hidden md:bg-neutral bg-transparent p-4 pt-16'
+						'glass md:bg-neutral bg-transparent p-4 pt-16'
 					)}
 				>
 					Из-за близости большой воды, погода на острове может меняться. Как-то
@@ -41,7 +41,7 @@ const ColoredGrid = () => {
 				<div
 					className={cn(
 						styles.square,
-						'glass md:glass:hidden md:bg-primary bg-transparent p-4 pt-16'
+						'glass md:bg-primary bg-transparent p-4 pt-16'
 					)}
 				>
 					В интернете можно найти статью о том, как какой-то турист отошел от
@@ -51,7 +51,7 @@ const ColoredGrid = () => {
 				<div
 					className={cn(
 						styles.square,
-						'glass md:glass:hidden md:bg-secondary bg-transparent p-4 pt-16'
+						'glass md:bg-secondary bg-transparent p-4 pt-16'
 					)}
 				>
 					На острове можно найти мангалы-заимки и угли, заботливо оставленные

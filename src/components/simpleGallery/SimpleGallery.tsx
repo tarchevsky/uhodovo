@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const SimpleGallery = () => {
 	return (
-		<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-16'>
+		<div className='grid grid-cols-2 lg:grid-cols-4 mb-16'>
 			<Image
 				src='/main-gallery-1.png'
 				alt='Галерея на главной 1'
