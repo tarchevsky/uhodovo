@@ -8,7 +8,7 @@ const TextBg = () => {
 		<FadeIn
 			className={cn(
 				styles.textbg,
-				'relative h-[200px] xl:h-auto w-full grid gap-5 xl:pr-[400px] items-end xl:items-start'
+				'relative h-[200px] xl:h-[100svh] w-full grid gap-5 md:pr-[200px] xl:pr-[300px] items-end xl:items-start'
 			)}
 		>
 			<Image
@@ -21,7 +21,7 @@ const TextBg = () => {
 			<div
 				className={cn(
 					styles.text,
-					'relative z-10 w-full xl:h-[50svh] p-4 xl:p-16 border-2 border-base-100 text-base-100 text-[14px] md:text-xl'
+					'relative z-10 w-full p-4 h-full xl:p-16 border-2 border-base-100 text-base-100 text-[14px] md:text-xl'
 				)}
 			>
 				<p className={cn('hidden xl:block')}>
