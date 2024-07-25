@@ -70,7 +70,7 @@ const CheckList = () => {
 				>
 					<div>
 						<Checkbox label='газовая горелка или баллоны' />
-						<Checkbox label='стол' />
+						<Checkbox label='стол, топор, лопата' />
 						<Checkbox label='кастрюля, котелок, чайник' />
 						<Checkbox label='одноразовый мангал' />
 						<Checkbox label='угли, розжиг' />
