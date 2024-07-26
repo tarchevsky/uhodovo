@@ -1,10 +1,15 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 export default function Document() {
 	return (
 		<Html lang='ru'>
-			<Head>
-				<script
+			<Head />
+			<body>
+				<Main />
+				<NextScript />
+				<Script
+					strategy='afterInteractive'
 					dangerouslySetInnerHTML={{
 						__html: `
                 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -22,11 +27,6 @@ export default function Document() {
               `
 					}}
 				/>
-			</Head>
-
-			<body>
-				<Main />
-				<NextScript />
 			</body>
 		</Html>
 	)
