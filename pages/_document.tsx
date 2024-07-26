@@ -1,4 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Metrika from '@/components/metrika/Metrika'
+
+const analyticsEnabled = !!(process.env.NODE_ENV === 'production')
 
 export default function Document() {
 	return (
@@ -8,6 +11,7 @@ export default function Document() {
 				<Main />
 				<NextScript />
 			</body>
+			<Metrika enabled={analyticsEnabled} />
 		</Html>
 	)
 }
