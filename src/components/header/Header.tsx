@@ -31,7 +31,7 @@ const Header = () => {
 					<li className={cn(styles.item, 'block text-center')}>
 						<Link
 							className='px-0 xl:px-[10px] btn btn-ghost'
-							href='uhodovo-longread.vercel.app'
+							href='https://uhodovo-longread.vercel.app'
 						>
 							Как выбрать сап
 						</Link>
