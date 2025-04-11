@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import cn from 'clsx'
+import Link from 'next/link'
 import styles from './Header.module.scss'
 
 const Header = () => {
@@ -26,6 +26,14 @@ const Header = () => {
 					<li className={cn(styles.item, 'block text-center')}>
 						<Link className='px-0 xl:px-[10px] btn btn-ghost' href='/reports'>
 							Фотоотчеты
+						</Link>
+					</li>
+					<li className={cn(styles.item, 'block text-center')}>
+						<Link
+							className='px-0 xl:px-[10px] btn btn-ghost'
+							href='uhodovo-longread.vercel.app'
+						>
+							Как выбрать сап
 						</Link>
 					</li>
 				</ul>
