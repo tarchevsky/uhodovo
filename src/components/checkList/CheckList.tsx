@@ -1,14 +1,51 @@
-import cn from 'clsx'
-import styles from './CheckList.module.scss'
 import Checkbox from '@/components/checkbox/Checkbox'
+import cn from 'clsx'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import styles from './CheckList.module.scss'
 
 const CheckList = () => {
+	const [resetKey, setResetKey] = useState(0)
+	const [checkedCount, setCheckedCount] = useState(0)
+
+	// При монтировании компонента подсчитываем количество отмеченных чекбоксов
+	useEffect(() => {
+		const count = Object.keys(localStorage).filter(
+			key => key.startsWith('checkbox_') && localStorage.getItem(key) === 'true'
+		).length
+		setCheckedCount(count)
+	}, [])
+
+	const handleReset = () => {
+		// Очищаем все checkbox_ ключи из localStorage
+		Object.keys(localStorage).forEach(key => {
+			if (key.startsWith('checkbox_')) {
+				localStorage.removeItem(key)
+			}
+		})
+		setResetKey(prev => prev + 1)
+		setCheckedCount(0)
+	}
+
+	const handleCheckboxChange = (isChecked: boolean) => {
+		setCheckedCount(prev => (isChecked ? prev + 1 : prev - 1))
+	}
+
 	return (
 		<>
 			<h3 className='text-center font-extrabold text-3xl uppercase my-14'>
 				Взять с собой
 			</h3>
+			{checkedCount > 0 && (
+				<div className='text-center mb-5'>
+					<button
+						onClick={handleReset}
+						className='btn btn-outline btn-secondary'
+					>
+						Сбросить все пункты
+					</button>
+				</div>
+			)}
 			<form
 				id='take'
 				className={cn(
@@ -28,30 +65,102 @@ const CheckList = () => {
 					)}
 				>
 					<div>
-						<Checkbox label='палатка' />
-						<Checkbox label='спальник' />
-						<Checkbox label='коврик, матрас-пенка' />
-						<Checkbox label='надувная подушка' />
-						<Checkbox label='чашка, миска, ложка, вилка' />
-						<Checkbox label='походный стульчик' />
+						<Checkbox
+							label='палатка'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='спальник'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='коврик, матрас-пенка'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='надувная подушка'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='чашка, миска, ложка, вилка'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='походный стульчик'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
 					</div>
 
 					<div>
-						<Checkbox label='фонарики' />
-						<Checkbox label='пауэрбанки, батарейки ' />
-						<Checkbox label='головной убор от солнца' />
-						<Checkbox label='дождевик' />
-						<Checkbox label='солнце-защитный крем' />
-						<Checkbox label='зубная щетка, паста' />
+						<Checkbox
+							label='фонарики'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='пауэрбанки, батарейки'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='головной убор от солнца'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='дождевик'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='солнце-защитный крем'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='зубная щетка, паста'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
 					</div>
 
 					<div>
-						<Checkbox label='аптечка, туалетная бумага' />
-						<Checkbox label='вода (6-8 л на человека)' />
-						<Checkbox label='запас еды, чайные пакетики' />
-						<Checkbox label='купальник, полотенце, плед' />
-						<Checkbox label='шлепки и закрытая обувь' />
-						<Checkbox label='теплая одежда на вечер' />
+						<Checkbox
+							label='аптечка, туалетная бумага'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='вода (6-8 л на человека)'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='запас еды, чайные пакетики'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='купальник, полотенце, плед'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='шлепки и закрытая обувь'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='теплая одежда на вечер'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
 					</div>
 				</div>
 				<div
@@ -69,30 +178,102 @@ const CheckList = () => {
 					)}
 				>
 					<div>
-						<Checkbox label='газовая горелка или баллоны' />
-						<Checkbox label='стол, топор, лопата' />
-						<Checkbox label='кастрюля, котелок, чайник' />
-						<Checkbox label='одноразовый мангал' />
-						<Checkbox label='угли, розжиг' />
-						<Checkbox label='тент, паракорд' />
+						<Checkbox
+							label='газовая горелка или баллоны'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='стол, топор, лопата'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='кастрюля, котелок, чайник'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='одноразовый мангал'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='угли, розжиг'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='тент, паракорд'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
 					</div>
 
 					<div>
-						<Checkbox label='умывальник, мусорные мешки' />
-						<Checkbox label='средство для мытья посуды' />
-						<Checkbox label='нож, разделочная доска' />
-						<Checkbox label='спички, зажигалка, лопата' />
-						<Checkbox label='влажные салфетки' />
-						<Checkbox label='репелленты  от насекомых' />
+						<Checkbox
+							label='умывальник, мусорные мешки'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='средство для мытья посуды'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='нож, разделочная доска'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='спички, зажигалка, лопата'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='влажные салфетки'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='репелленты  от насекомых'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
 					</div>
 
 					<div>
-						<Checkbox label='колонка музыкальная' />
-						<Checkbox label='гамак' />
-						<Checkbox label='мяч, бадминтон или игра' />
-						<Checkbox label='арбуз, шашлык, макароны' />
-						<Checkbox label='тушенка, вафли, хлеб' />
-						<Checkbox label='суповой набор, мюсли' />
+						<Checkbox
+							label='колонка музыкальная'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='гамак'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='мяч, бадминтон или игра'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='арбуз, шашлык, макароны'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='тушенка, вафли, хлеб'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
+						<Checkbox
+							label='суповой набор, мюсли'
+							resetKey={resetKey}
+							onStateChange={handleCheckboxChange}
+						/>
 					</div>
 				</div>
 				<div className={cn(styles.pic)}>
